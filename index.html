@@ -413,6 +413,102 @@
   .music-btn{font-family:var(--font-body);font-size:17px;text-transform:uppercase}
   .num{font-size:13px;height:24px}
   .empty{font-size:17px}
+
+  /* ===== Tema genérico / limpio ===== */
+  html[data-theme="generico"]{
+    --bg:#f5f7fb; --bg2:#ffffff; --card:#ffffff; --card2:#eef2f8; --line:#d6deea;
+    --txt:#1b2430; --muted:#667085;
+    --gold:#c27c0e; --gold-d:#a86800;
+    --burgundy:#2563eb; --purple:#7c3aed; --green:#15803d; --red:#dc2626;
+    --skin:#c98a63; --cream:#ffffff;
+    --font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-pixel:var(--font-body);
+  }
+  html[data-theme="generico"] body,
+  html[data-theme="generico"] body.demo{
+    --bg:#f5f7fb; --bg2:#ffffff; --card:#ffffff; --card2:#eef2f8; --line:#d6deea;
+    --txt:#1b2430; --muted:#667085;
+    --gold:#c27c0e; --gold-d:#a86800;
+    --burgundy:#2563eb; --purple:#7c3aed; --green:#15803d; --red:#dc2626;
+    background:linear-gradient(180deg,#eef3fb 0%,#f7f9fc 100%) fixed;
+    color:var(--txt);
+    font-family:var(--font-body); font-size:16px; letter-spacing:0;
+  }
+  html[data-theme="generico"] #pitch-bg{display:none}
+  html[data-theme="generico"] .music-btn,
+  html[data-theme="generico"] .tabs{background:#fff;border-color:var(--line);color:var(--txt)}
+  html[data-theme="generico"] .music-btn{box-shadow:0 1px 2px rgba(16,24,40,.06)}
+  html[data-theme="generico"] .tabs{border:1px solid var(--line);border-radius:12px;padding:5px}
+  html[data-theme="generico"] .tabs button{font-family:var(--font-body);font-size:13px;padding:10px 6px;letter-spacing:0;text-transform:none}
+  html[data-theme="generico"] .tabs button.active{background:var(--card2);box-shadow:none;color:var(--txt)}
+  html[data-theme="generico"] .brand h1{font-family:var(--font-body);font-size:22px;font-weight:800;letter-spacing:-.3px;line-height:1.2}
+  html[data-theme="generico"] .brand p{font-family:var(--font-body);font-size:13px}
+  html[data-theme="generico"] h2,
+  html[data-theme="generico"] h3{font-family:var(--font-body);font-size:18px;font-weight:700;letter-spacing:-.2px;line-height:1.3;text-transform:none}
+  html[data-theme="generico"] .section-head h2{font-size:20px}
+  html[data-theme="generico"] .card{border:1px solid var(--line);border-radius:14px;box-shadow:0 1px 3px rgba(16,24,40,.06);background:var(--card)}
+  html[data-theme="generico"] .btn{border-radius:10px;font-family:var(--font-body);font-size:14px;letter-spacing:0;text-transform:none;font-weight:600}
+  html[data-theme="generico"] .btn.primary{background:#2563eb;color:#fff;box-shadow:none}
+  html[data-theme="generico"] .btn.ghost{border:1px solid var(--line);box-shadow:none;background:#fff;color:var(--txt)}
+  html[data-theme="generico"] .btn.danger{border:1px solid #fecaca;box-shadow:none;background:#fef2f2;color:#b91c1c}
+  html[data-theme="generico"] .sidebtn{border:1px solid var(--line);font-family:var(--font-body);font-size:13px}
+  html[data-theme="generico"] .sidebtn.on{box-shadow:none}
+  html[data-theme="generico"] input,
+  html[data-theme="generico"] select,
+  html[data-theme="generico"] textarea{background:#fff;border:1px solid var(--line);border-radius:10px;font-family:var(--font-body);font-size:16px;color:var(--txt)}
+  html[data-theme="generico"] .muted{font-size:13px}
+  html[data-theme="generico"] .date{font-size:12px}
+  html[data-theme="generico"] .match-title{font-size:16px}
+  html[data-theme="generico"] .score{font-size:30px}
+  html[data-theme="generico"] .board .team .go{font-size:40px}
+  html[data-theme="generico"] .board .team .nm{font-size:13px}
+  html[data-theme="generico"] .assign-row .pname{font-size:15px}
+  html[data-theme="generico"] .goal-main{font-size:15px}
+  html[data-theme="generico"] .goal-main .as{font-size:12px}
+  html[data-theme="generico"] .table{font-size:14px}
+  html[data-theme="generico"] .table th{font-size:10px}
+  html[data-theme="generico"] .tile-num{font-size:22px}
+  html[data-theme="generico"] .log-score{font-size:16px}
+  html[data-theme="generico"] .log-vs{font-size:14px}
+  html[data-theme="generico"] .log-date{font-size:12px}
+  html[data-theme="generico"] .music-btn{font-family:var(--font-body);font-size:13px;text-transform:none}
+  html[data-theme="generico"] .num{font-size:12px;height:22px}
+  html[data-theme="generico"] .empty{font-size:15px}
+  html[data-theme="generico"] .tag{background:#eef2f8;color:#475467}
+  html[data-theme="generico"] .tag.mvp{background:#f3e8ff;color:#7e22ce}
+  html[data-theme="generico"] .tag.gk{background:#e0f2fe;color:#0369a1}
+  html[data-theme="generico"] .tag.hachazo{background:#fee2e2;color:#b91c1c}
+  html[data-theme="generico"] .tag.polemica{background:#fef3c7;color:#a16207}
+  html[data-theme="generico"] .tag.golazo{background:#ffedd5;color:#c2410c}
+  html[data-theme="generico"] .tag.muro{background:#e2e8f0;color:#475569}
+  html[data-theme="generico"] .pill{background:#eef2f8;color:#475467}
+  html[data-theme="generico"] .pill.gold{background:#fef3c7;color:#a16207}
+  html[data-theme="generico"] .pill.loss{background:#fee2e2;color:#b91c1c}
+  html[data-theme="generico"] .podium-item,
+  html[data-theme="generico"] .tile{background:#fff;border-color:var(--line)}
+  html[data-theme="generico"] .podium-item.p1{border-color:var(--gold);box-shadow:0 0 0 2px rgba(194,124,14,.18)}
+  html[data-theme="generico"] .assign-row,
+  html[data-theme="generico"] .comment,
+  html[data-theme="generico"] .goal-row,
+  html[data-theme="generico"] .log-row,
+  html[data-theme="generico"] .rank-row,
+  html[data-theme="generico"] details.help,
+  html[data-theme="generico"] .table td{border-color:#e4e9f1}
+  html[data-theme="generico"] pre.rules{background:#f8fafc;color:var(--txt)}
+  html[data-theme="generico"] .modal{background:#fff;border-color:var(--line);box-shadow:0 20px 60px rgba(16,24,40,.2)}
+  html[data-theme="generico"] .overlay{background:rgba(15,23,42,.35)}
+  html[data-theme="generico"] .demo-banner{box-shadow:none}
+  html[data-theme="generico"] .champ-card{border-width:2px;box-shadow:none}
+
+  /* Selector de tema */
+  .theme-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 4px}
+  .theme-opt{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;
+    background:var(--card2);border:2px solid var(--line);border-radius:12px;padding:12px;
+    cursor:pointer;color:var(--txt);font-family:inherit}
+  .theme-opt.on{border-color:var(--gold);box-shadow:0 0 0 2px rgba(242,183,5,.25)}
+  .theme-opt b{font-size:15px}
+  .theme-opt small{font-size:11px;color:var(--muted);line-height:1.3}
+  .theme-preview{font-size:28px;line-height:1}
 </style>
 </head>
 <body>
@@ -466,10 +562,11 @@
       </svg>
       <div>
         <h1>Piel Morena FC</h1>
-        <p>Estadísticas del equipo · 7 vs 7 · <span id="app-ver">v91</span></p>
+        <p>Estadísticas del equipo · 7 vs 7 · <span id="app-ver">v92</span></p>
       </div>
     </div>
     <div class="header-btns">
+      <button class="music-btn" id="theme-btn" data-action="open-theme" title="Cambiar tema visual">Tema</button>
       <button class="music-btn" id="music-btn" data-action="toggle-music">Himno</button>
       <button class="music-btn" id="sfx-btn" data-action="toggle-sfx">Sonido</button>
     </div>
@@ -492,6 +589,31 @@ let newPositions = null;
 let rankCat = 'goles';
 let escabioMatchId = null;
 let lastChampJSON = null;
+const THEME_KEY = 'pielmorenafc_theme';
+let theme = (()=>{ try{ return localStorage.getItem(THEME_KEY) === 'generico' ? 'generico' : 'pixel'; }catch(e){ return 'pixel'; } })();
+function applyTheme(){ document.documentElement.setAttribute('data-theme', theme); }
+function setTheme(k){
+  theme = k === 'generico' ? 'generico' : 'pixel';
+  try{ localStorage.setItem(THEME_KEY, theme); }catch(e){}
+  applyTheme(); render();
+}
+function openTheme(){
+  openModal(`
+    <h3>Tema visual</h3>
+    <p class="muted">Elegí cómo se ve la app en este dispositivo.</p>
+    <div class="theme-options">
+      <button class="theme-opt ${theme==='pixel'?'on':''}" data-action="set-theme" data-theme="pixel">
+        <span class="theme-preview">🎮</span><b>Pixel art</b><small>Arcade, cancha y tipografía retro</small>
+      </button>
+      <button class="theme-opt ${theme==='generico'?'on':''}" data-action="set-theme" data-theme="generico">
+        <span class="theme-preview">◻️</span><b>Genérico</b><small>Limpio, claro y moderno</small>
+      </button>
+    </div>
+    <div class="modal-actions">
+      <button class="btn ghost" data-action="modal-close">Cerrar</button>
+    </div>
+  `);
+}
 let commentName = localStorage.getItem('pmfc_name') || '';
 let playerEditMode = false;
 
@@ -1234,6 +1356,7 @@ function faceForName(name, size){
 
 /* ---------- render ---------- */
 function render(){
+  applyTheme();
   $('#tabs').innerHTML = [['partidos','Partidos'],['campeonato','Campeonato'],['estadisticas','Estadísticas'],['jugadores','Jugadores']]
     .map(([k,l])=>`<button data-action="tab" data-view="${k}" class="${view===k?'active':''}">${l}</button>`).join('');
   $('#app').innerHTML = view==='jugador' ? playerDetailHTML()
@@ -2892,6 +3015,8 @@ document.addEventListener('click', e=>{
     case 'back': currentMatchId=null; render(); break;
     case 'new-match': openNewMatch(); break;
     case 'create-match': createMatch(); break;
+    case 'open-theme': openTheme(); break;
+    case 'set-theme': setTheme(t.dataset.theme); closeModal(); break;
     case 'champ-qualify': setChampQualify(parseInt(t.dataset.q,10)||4); break;
     case 'champ-zones': setChampZones(parseInt(t.dataset.z,10)||1); break;
     case 'champ-add-team': addChampTeam(); break;

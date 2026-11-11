@@ -35,7 +35,7 @@ Aplicación web **mobile-first** para que un equipo amateur de fútbol 7 lleve l
 - **Finalizar partido**: al cerrar un partido sus datos quedan bloqueados para todos (solo el admin puede reabrirlo), pero se pueden seguir agregando **comentarios**. Además, los partidos se finalizan **automáticamente al día siguiente** de su fecha.
 - **Admin**: borrar partidos, borrar jugadores y reabrir partidos finalizados queda restringido al administrador, que entra con GitHub (`Learmonelli`). El resto del equipo sigue sin registrarse (puede crear y editar).
 - **Datos en tiempo real**: todo se guarda en la nube (Supabase / Postgres + Realtime) y se sincroniza al instante entre dispositivos.
-- **Tema "Cancha arcade"**: fondo de cancha pixelada, tipografías retro y paneles vinotinto.
+- **Dos temas visuales** elegibles desde el botón **Tema**: **Pixel art** (fondo de cancha pixelada, tipografías retro y paneles vinotinto) y **Genérico** (claro, limpio y moderno, con tipografía del sistema). La elección se guarda en el dispositivo.
 - **Audio 8-bit generado con Web Audio API**: efectos (gol, figura) y un **himno original** en loop.
 - **Copias de seguridad**: exportar/importar JSON y **backup automático semanal en la nube** (tabla `backups`, se conservan las últimas 8 semanas, con descargar/restaurar). Además, `supabase/weekly-backup.sql` programa un backup del lado del servidor con `pg_cron`, independiente de que alguien abra la app.
 
